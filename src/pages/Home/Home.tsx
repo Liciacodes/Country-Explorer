@@ -13,8 +13,12 @@ interface Country {
   alpha3Code: string;
 }
 
-const Home = () => {
-  const [countries, setCountries] = useState<Country[]>(countriesData);
+interface HomeProps {
+  darkMode: boolean
+}
+
+const Home: React.FC<HomeProps> = ({darkMode}) => {
+  const [countries] = useState<Country[]>(countriesData);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [region, setRegion] = useState<string>("");
 
@@ -25,12 +29,12 @@ const Home = () => {
   );
 
   return (
-    <div className="p-12">
+    <div className={`p-12 ${darkMode ? "bg-[hsl(207, 26%, 17%)] text-[hsl(0, 0%, 100%)]" : "bg-[hsl(0, 0%, 98%)] text-[hsl(200, 15%, 8%)"}`}>
       <div className="flex justify-between items-center">
-        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-        <FilterDropdown setRegion={setRegion} />
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} darkMode={darkMode}/>
+        <FilterDropdown setRegion={setRegion} darkMode={darkMode}/>
       </div>
-      <div className="grid grid-cols-3 gap-x-12 gap-y-16 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 mt-6">
         {filteredCountries.map((country) => (
           <CountryCard key={country.alpha3Code} country={country} />
         ))}

@@ -1,100 +1,132 @@
-# Frontend Mentor - REST Countries API with color theme switcher
+Frontend Mentor - REST Countries API with Color Theme Switcher Solution
 
-![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
+This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor. Frontend Mentor challenges help improve coding skills by building realistic projects.
 
-## Welcome! 👋
+Table of contents
 
-Thanks for checking out this front-end coding challenge.
+Overview
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+The Challenge
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+Screenshot
 
-## The challenge
+Links
 
-Your challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
+My Process
 
-You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
+Built With
 
-Your users should be able to:
+What I Learned
 
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode *(optional)*
+Continued Development
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+Useful Resources
 
-**⚠️ NOTE ⚠️: Sometimes the REST Countries API can go down. We've added a `data.json` file with all the country data if you prefer to use that instead. However, please be aware that the data in the JSON file might not be up-to-date.**
+Author
 
-## Where to find everything
+Acknowledgments
 
-Your task is to build out the project to the designs inside the `/design` folder. 
+Overview
 
-In this challenge, you will find mobile and desktop designs in light and dark mode color schemes for both pages.
+The Challenge
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+Users should be able to:
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+See all countries from the API on the homepage
 
-There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.com) and you can use an icon font library for the icons.
+Search for a country using an input field
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+Filter countries by region
 
-## Building your project
+Click on a country to see more detailed information on a separate page
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Click through to the border countries on the detail page
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Toggle the color scheme between light and dark mode
 
-## Deploying your project
+Screenshot
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Links
 
-## Create a custom `README.md`
+Solution URL: Add solution URL here
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Live Site URL: Add live site URL here
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+My Process
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+Built With
 
-## Submitting your solution
+Semantic HTML5 markup
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+Tailwind CSS for styling
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Flexbox & Grid for layout
 
-## Sharing your solution
+Mobile-first workflow
 
-There are multiple places you can share your solution:
+React - JavaScript library
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+React Router - For navigation
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+REST Countries API - API for fetching country data
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+React Icons - For dark mode toggle and navigation icons
 
-## Got feedback for us?
+What I Learned
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+While working on this project, I learned how to:
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+Implement dark mode using React state and Tailwind CSS
 
-**Have fun building!** 🚀
+Manage dynamic routes with react-router-dom
+
+Fetch and display data from an external API
+
+Use useParams to get dynamic URL segments
+
+Optimize UI components using reusable components like CountryCard
+
+Example Code for Dark Mode Toggle:
+
+const [darkMode, setDarkMode] = useState<boolean>(false);
+
+return (
+  <div className={`${darkMode ? 'dark' : ''}`}>
+    <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+  </div>
+);
+
+Continued Development
+
+Implement a loading state while fetching data
+
+Add animations for better user experience
+
+Improve accessibility (ARIA roles, keyboard navigation)
+
+Optimize performance by caching API responses
+
+Useful Resources
+
+Tailwind CSS Docs - Helped with styling efficiently.
+
+React Router Docs - Helped in setting up navigation and dynamic routes.
+
+REST Countries API - Official API documentation.
+
+Author
+
+Website - feliciaudosen.com
+
+Frontend Mentor - @Liciacodes
+
+GitHub - @Liciacodes
+
+Twitter - @liciacodes_
+
+Acknowledgments
+
+Special thanks to Frontend Mentor for providing great challenges and helping developers improve their skills. Also, thanks to the Tailwind and React communities for their extensive documentation and resources.
+

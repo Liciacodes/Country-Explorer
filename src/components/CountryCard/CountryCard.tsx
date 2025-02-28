@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface Country {
   name: string;
   population: number;
@@ -13,6 +15,7 @@ interface CountryCardProps {
 
 const CountryCard: React.FC<CountryCardProps> = ({ country }) => {
   return (
+    <Link to={`/country/${country.alpha3Code}`} className="cursor-pointer">
     <div className="bg-gray-100 dark:bg-gray-800  rounded-lg shadow-md">
       <img
         src={country.flags.png}
@@ -32,7 +35,7 @@ const CountryCard: React.FC<CountryCardProps> = ({ country }) => {
       </p>
       </div>
       
-    </div>
+    </div></Link>
   );
 };
 
