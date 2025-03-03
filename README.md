@@ -48,7 +48,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Add solution URL here
+- Solution URL: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca?tab=solutions
 
 - Live Site URL: https://rest-country-listing-with-color-theme.netlify.app/
 
