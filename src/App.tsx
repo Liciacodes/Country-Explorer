@@ -2,13 +2,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CountryDetails from "./pages/CountryDetails/CountryDetails";
 
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    return localStorage.getItem('darkmode' ) === "true"
+  });
+
+  useEffect(() => {
+    localStorage.setItem('darkmode', JSON.stringify(darkMode))
+  }, [darkMode])
   return (
     <BrowserRouter>
       <div className= {`"bg-gray-50 dark:bg-gray-900 min-h-screen text-gray-900 dark:text-white" ${darkMode ? "dark" : ""}`}>
