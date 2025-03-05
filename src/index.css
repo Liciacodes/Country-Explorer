@@ -3,14 +3,7 @@
 @import "tailwindcss";
 
 
-@layer base {
-    :root {
-      --bg-light: hsl(0, 0%, 98%);
-      --text-light: hsl(200, 15%, 8%);
-      --bg-dark:  hsl(207, 26%, 17%);
-      --text-dark: hsl(0, 0%, 100%);
-    }
-  
+
 
     .nunito {
       font-family: "Nunito", serif;
@@ -20,14 +13,14 @@
     }
 
     body {
-     
-      background-color: var(--bg-light);
-      color: var(--text-light);
-    }
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
   
-    .dark {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
-    }
-  }
   

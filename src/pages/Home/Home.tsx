@@ -3,6 +3,7 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import FilterDropdown from "../../components/FilterDropdown/FilterDropdown";
 import CountryCard from "../../components/CountryCard/CountryCard";
 import countriesData from "../../../data.json";
+import { useTheme } from "../../context/ThemeContext";
 
 interface Country {
   name: string;
@@ -13,14 +14,11 @@ interface Country {
   alpha3Code: string;
 }
 
-interface HomeProps {
-  darkMode: boolean
-}
-
-const Home: React.FC<HomeProps> = ({darkMode}) => {
+const Home: React.FC = () => {
   const [countries] = useState<Country[]>(countriesData);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [region, setRegion] = useState<string>("");
+  const { darkMode } = useTheme();
 
   const filteredCountries = countries.filter(
     (country) =>
@@ -29,14 +27,20 @@ const Home: React.FC<HomeProps> = ({darkMode}) => {
   );
 
   return (
-    <div className={`p-12 ${darkMode ? "bg-[hsl(207, 26%, 17%)] text-[hsl(0, 0%, 100%)]" : "bg-[hsl(0, 0%, 98%)] text-[hsl(200, 15%, 8%)"}`}>
-      <div className="flex justify-between items-center">
-        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} darkMode={darkMode}/>
-        <FilterDropdown setRegion={setRegion} darkMode={darkMode}/>
+    <div
+      className={`min-h-screen p-12 transition-all duration-300 
+        ${darkMode 
+          ? "bg-[hsl(207,26%,17%)] text-[hsl(0,0%,100%)]"
+          : "bg-[hsl(0,0%,98%)] text-[hsl(200,15%,8%)]"
+        }`}
+    >
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}  />
+        <FilterDropdown setRegion={setRegion} darkMode={darkMode} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mt-16">
         {filteredCountries.map((country) => (
-          <CountryCard key={country.alpha3Code} country={country} />
+          <CountryCard key={country.alpha3Code} country={country}/>
         ))}
       </div>
     </div>
